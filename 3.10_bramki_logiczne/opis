@@ -12,6 +12,23 @@ Uruchamiając symulację określ jakie działa bramka OR
 Analogicznie zrozum działanie bramki AND 
 Analogicznie zrozum działanie bramki NOT 
 
+ 
+
 ZADANIE 1: 
 
-ZADANIE 2:
+Pobierz plik logicGates_checkCond.json z naszego GitHuba (https://github.com/KrzysiekBlankiewicz/inf_R_2LO_24-25) 
+Załaduj go do edytora Logigator (polecenie “open” lub ctrl+o) 
+Odpowiedz na widoczne pytania 
+Potraktujmy zestaw 4 przełączników jako liczbę 4 bitową (najbardziej znaczący bit na górze) 
+Zmodyfikuj projekt tak, aby dioda zapalała się po ustawieniu na przełącznikach liczby 14.  
+Zmodyfikuj projekt tak, aby dioda zapalała się po ustawieniu na przełącznikach liczby 11. 
+Zmodyfikuj projekt tak, aby dioda zapalała się po ustawieniu na przełącznikach liczby 11 lub liczby 14. 
+Zmodyfikuj projekt tak, aby dioda zapalała się po ustawieniu na przełącznikach liczby większej od 7. 
+Zmodyfikuj projekt tak, aby dioda zapalała się po ustawieniu na przełącznikach liczby większej od 6. 
+Zmodyfikuj projekt tak, aby dioda zapalała się po ustawieniu na przełącznikach liczby 3 lub liczby większej od 11. 
+
+ZADANIE 2: 
+
+Pobierz plik logicGates_checkCond.json z naszego GitHuba (https://github.com/KrzysiekBlankiewicz/inf_R_2LO_24-25) 
+Załaduj go do edytora Logigator (polecenie “open” lub ctrl+o) 
+Zmodyfikuj projekt tak, aby na diodach ustawiana była liczba o 1 większa od liczby ustawionej na przełącznikach 
