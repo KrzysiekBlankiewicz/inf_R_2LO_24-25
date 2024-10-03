@@ -1,0 +1,17 @@
+Zajęcia 3.10
+----------------
+WSTĘP: 
+
+Otwórz stronę https://logigator.com/editor/ 
+Dodaj na obszar roboczy diodę LED (wybierając ją w panelu po lewej a następnie klikając w miejscu docelowym) 
+Dodaj na obszar roboczy przełącznik (SWITCH) i połącz jego wyjście z wejściem diody. 
+Uruchom symulację (prawy górny róg) i obserwuj co się dzieje, kiedy zmieniamy kliknięciem pozycję przełącznika. 
+Dodaj na obszar roboczy drugi przycisk oraz bramkę OR (OR Gate). 
+Podłącz przyciski do bramki OR, a bramkę OR do diody. 
+Uruchamiając symulację określ jakie działa bramka OR 
+Analogicznie zrozum działanie bramki AND 
+Analogicznie zrozum działanie bramki NOT 
+
+ZADANIE 1: 
+
+ZADANIE 2:
