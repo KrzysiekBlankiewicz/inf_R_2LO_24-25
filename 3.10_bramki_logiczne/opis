@@ -29,7 +29,7 @@ Zmodyfikuj projekt tak, aby dioda zapalała się po ustawieniu na przełącznika
 
 ZADANIE 2: 
 
-Pobierz plik logicGates_checkCond.json z naszego GitHuba (https://github.com/KrzysiekBlankiewicz/inf_R_2LO_24-25) 
+Pobierz plik logicGates_operations.json z naszego GitHuba (https://github.com/KrzysiekBlankiewicz/inf_R_2LO_24-25) 
 Załaduj go do edytora Logigator (polecenie “open” lub ctrl+o) 
 Zmodyfikuj projekt tak, aby na diodach ustawiana była liczba o 1 większa od liczby ustawionej na przełącznikach 
 Zapisz wynik swojej pracy w pkt. 3 (ostatni podpunkt, który wykonałeś) jako plik zad2_imie_nazwisko.json 
