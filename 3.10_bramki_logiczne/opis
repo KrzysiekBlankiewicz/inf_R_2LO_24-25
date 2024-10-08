@@ -40,3 +40,10 @@ Załaduj ten plik na GitHuba do folderu “3.10_bramki_logiczne”
 ZADANIE 3: 
 
 Zmodyfikuj projekt z zadania 2 tak, aby liczba ustawiana na diodach była sumą dwóch liczb ustawionych na 4 bitowych przełącznikach 
+
+!!!
+Jeżeli nie masz uprawnień do dodawania plików do repozytorium, to:
+1. Stwórz konto na GitHubie
+2. napisz do mnie (Krzysztof Blankiewicz) na temasach lub mailem "Prosze Pana, prosze o dodanie mnie do repozytorium. Moja nazwa użytkownika to <i_tu_Twoja_nazwa_użytkownika>."
+3. Następnego dnia wejdź do repozytorium (https://github.com/KrzysiekBlankiewicz/inf_R_2LO_24-25). Wyświetli się informacja, że wysłano Ci zaproszenie - potwierdź je.
+4. Teraz już możesz dodać swoje rozwiązanie
