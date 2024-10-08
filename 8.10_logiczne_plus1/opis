@@ -1,1 +1,14 @@
 Stwórz układ bramek logicznych dodający 1 do liczby ustawionej na 4 przełącznikach.
+
+1. Pobierz plik logicGates_operations.json z naszego GitHuba (https://github.com/KrzysiekBlankiewicz/inf_R_2LO_24-25) 
+2. Załaduj go do edytora Logigator (polecenie “open” lub ctrl+o) 
+3. Zmodyfikuj projekt tak, aby na diodach ustawiana była liczba* o 1 większa od liczby ustawionej na przełącznikach
+  *(tzn. liczba binarna tworząca się z żarówek - żarówka zapalona to 1, zgaszona to 0)
+4. Zapisz wynik swojej pracy w pkt. 3 (ostatni podpunkt, który wykonałeś) jako plik zad2_imie_nazwisko.json 
+5. Załaduj ten plik na GitHuba do folderu “3.10_bramki_logiczne” 
+
+Jeżeli nie masz uprawnień do dodawania plików do repozytorium, to:
+1. Stwórz konto na GitHubie
+2. napisz do mnie (Krzysztof Blankiewicz) na temasach lub mailem "Prosze Pana, prosze o dodanie mnie do repozytorium. Moja nazwa użytkownika to <i_tu_Twoja_nazwa_użytkownika>."
+3. Następnego dnia wejdź do repozytorium (https://github.com/KrzysiekBlankiewicz/inf_R_2LO_24-25). Wyświetli się informacja, że wysłano Ci zaproszenie - potwierdź je.
+4. Teraz już możesz dodać swoje rozwiązanie
