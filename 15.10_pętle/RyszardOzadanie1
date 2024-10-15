@@ -1,0 +1,30 @@
+import random
+
+def liczbaotrzpkt(bet_goleA, bet_goleB, real_goleA, real_goleB):
+    pkt = 0
+    if bet_goleA == real_goleA:
+        pkt = pkt + 1
+    if bet_goleB == real_goleB:
+        pkt = pkt + 1
+    if bet_goleA > bet_goleB and real_goleA > real_goleB:
+        pkt = pkt + 1
+    if bet_goleA < bet_goleB and real_goleA < real_goleB:
+        pkt = pkt + 1
+    if bet_goleA == bet_goleB and real_goleA == real_goleB:
+        pkt = pkt + 1
+    if bet_goleA == real_goleA and bet_goleB == real_goleB:
+        pkt = pkt + 2
+    return pkt
+
+
+
+A = random.randint(0 , 5)
+B = random.randint(0 , 5)
+relA = random.randint(0 , 5)
+relB = random.randint(0 , 5)
+pkty = liczbaotrzpkt(A,B,relA,relB)
+print("Wynik meczu:")
+print(relA)
+print(relB)
+print("Twoje punkty:")
+print(pkty)
