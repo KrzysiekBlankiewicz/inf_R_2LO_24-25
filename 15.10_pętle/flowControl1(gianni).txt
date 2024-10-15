@@ -1,0 +1,45 @@
+def funkcjaA(x):
+    print(x)
+
+def funkcjaB(bet_goleA, bet_goleB, real_goleA, real_goleB):
+	suma = 0
+	if bet_goleA == real_goleA:
+		winikA = 1
+	if bet_goleA != real_goleA:
+		winikA = 0
+	if bet_goleB == real_goleB:
+		winikB = 1
+	if bet_goleB != real_goleB:
+		winikB = 0
+	if bet_goleA < bet_goleB and real_goleA < real_goleB:
+		wynikC = 2
+	if bet_goleA < bet_goleB and real_goleA >= real_goleB:
+		wynikC = 0
+	if bet_goleA > bet_goleB and real_goleA > real_goleB:
+		wynikC = 2
+	if bet_goleA > bet_goleB and real_goleA <= real_goleB:
+		wynikC = 0
+	if bet_goleA == bet_goleB and real_goleA == real_goleB:
+		wynikC = 2
+	if bet_goleA == bet_goleB and real_goleA != real_goleB:
+		wynikC = 0
+	if bet_goleA + bet_goleB  == real_goleA + real_goleB:
+		winikD = 1
+	if bet_goleA + bet_goleB  != real_goleA + real_goleB:
+		winikD = 0
+	suma = winikA + winikB + wynikC + winikD
+	return suma
+
+
+real_goleA = 3
+real_goleB = 2
+
+
+print("podaj numer bramek arsenalu")
+bet_goleA = int(input())
+
+print("podaj numer bramek chelsea")
+bet_goleB = int(input())
+
+
+print(funkcjaB(bet_goleA, bet_goleB, real_goleA, real_goleB))
