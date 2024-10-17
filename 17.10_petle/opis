@@ -1,0 +1,39 @@
+n to liczba podana przez użytkownika z klawiatury
+
+Napisz funkcję, która 
+1. wyświetli n pierwszych liczb naturalnych.
+2. wyznaczy sumę liczb od 1 do n
+3. wyświetli 10 kolejnych wielokrotności n
+4.1 wyświetli tylko te liczby z tablicy liczby[], które są większe od n
+4.2* dodatkową funkcję, która wypełni tablicę liczby[] losowymi liczbami
+5. wyświetli liczby od -n do -1
+6. wyświetli n pierwszych elementów ciągu Fibonacciego
+7. wyznaczy n silnia
+8. wyświetli tylko te napisy z tablicy napisy[], których długość jest równa n
+
+9. Wyświetl liczby wg poniższego schematu:
+1 
+1 2 
+1 2 3 
+1 2 3 4 
+. . .
+. . . n
+
+10. Wyświetli liczby wg poniższego schematu:
+. . . n
+. . . 
+4 3 2 1 
+3 2 1 
+2 1 
+1
+
+11. Wyświetli gwiazdki wg poniższego wzoru:
+1 * 
+2 * * 
+3 * * * 
+4 * * * *
+n  
+4 * * * * 
+3 * * * 
+2 * * 
+1 *
