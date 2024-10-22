@@ -1,0 +1,9 @@
+ZADANIE 1 – przypomnienie czym jest pętla:
+Napisz program, który dla każdej liczby od 1 do 30 obliczy i wyświetli jej sześcian.
+
+
+ZADANIE 2 – przerywanie pętli:
+Napisz program, który 
+1.	przyjmie od użytkownika liczbę naturalną i zapiszę ją w zmiennej x
+2.	z wykorzystaniem pętli będzie podwajał wartość zmiennej x aż jej wartość przekroczy 100000
+3.	wypisze ile razy zwiększał x, czyli ile razy wykonała się pętla
