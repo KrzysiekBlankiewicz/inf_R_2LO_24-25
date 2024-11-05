@@ -1,0 +1,5 @@
+zadanie 2.3
+Największa z liczb w bin.txt to 1110100011100011100
+zadanie 5
+<
+<
