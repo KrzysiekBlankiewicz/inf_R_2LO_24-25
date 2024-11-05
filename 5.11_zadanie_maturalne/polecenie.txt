@@ -1,0 +1,6 @@
+Proszę o wykonanie zadań 2.3 i 5 z matury 2023.
+
+Potrzebne dane znajdują się w plikach tu obecnych.
+Przypominam, że pliki z danymi muszą znajdować się w tym samym folderze co kod z nich korzystający.
+
+W pliku szablon.py znajduje się fragment kodu wczytujący dane z pliku i umieszczający kolejne liczby (jako napisy) na kolejnych miejscach tablicy "liczby".
