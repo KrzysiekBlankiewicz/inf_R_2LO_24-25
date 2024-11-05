@@ -1,6 +1,6 @@
 def max_elem(majka):
 	max = majka[0]
-	for i in range(0, 6):
+	for i in range(0, len(majka):
 		if majka[i] > max:
 			max = majka[i]
 	return max
