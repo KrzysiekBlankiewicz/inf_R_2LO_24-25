@@ -1,0 +1,11 @@
+f = open("bin.txt", "r")
+wszystko = []
+ 
+for i in range(0, 100):
+    l = f.readline()
+    l = l[0:len(l)-1]
+    x = int(l)
+    wszystko.append(x)
+ 
+wszystko.sort()
+print(wszystko[99])
