@@ -1,0 +1,24 @@
+def uklid(c,d):
+	licznik = 0
+	limit = min(c,d)
+	if c>d:
+		limit = c
+	else:
+		limit = d
+	for x in range(0, limit):
+		licznik = licznik + 1
+		if c > d:
+			c = c - d
+		if d > c:
+			d = d - c
+		if c == d:
+			return (c, licznik)
+
+
+print("podaj a i b")
+c = int(input())
+d = int(input())
+e = uklid(c,d)
+print(e[0])
+print(e[1])
+			
