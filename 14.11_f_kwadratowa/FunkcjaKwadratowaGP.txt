@@ -1,0 +1,61 @@
+import math
+# wypełnij treścią fragmenty oznaczone #TODO# aby program wypisywał poprawne postaci wzoru funkcji kwadratowej
+# dla ułatwienia możesz założyć, że współczynniki będą liczbami naturalnymi mniejszymi od 10
+ 
+def wartosc_wielom(params, x):
+    return wartosc
+ 
+def delta(a, b, c):
+    d = b**2-4*a*c
+    return d
+def msc_zerowe(a, b, c):
+	d = delta(a, b ,c)
+	x1 = (-b-(math.sqrt(d))/2*a)
+	x2 = (-b+(math.sqrt(d))/2*a)
+	return (x1, x1)
+ 
+def kanon(a, b, c):
+	d = delta(a, b , c)
+	a = a
+	p = -b/2*a
+	q = (-(math.sqrt(d))/4*a)
+	return (a, p, q)
+ 
+def iloczyn(params):
+	a = a
+	x = x
+	x1 = msc_zerowe(a, b, c)
+	x = msc_zerowe(a, b, c)
+	return (a, x1, x2)
+ 
+# dane od użytkownika
+print("Podaj wzór funkcji kwadratowej w formacie \"f(x) = ax^2 + bx + c\"")
+funkcja = input()
+ 
+ 
+# parametr przy x^2
+p1 = funkcja[7]
+ 
+# parametr przy x
+p2 = funkcja[14]
+ 
+# wyraz wolny
+p3 = funkcja[19]
+ 
+print("f(x) = ax^2 + bx + c")
+ 
+# wypisz użytkownikowi wzór funkcji kwadratowej w postaci iloczynowej
+postac_kanoniczna = kanon(p1, p2, p3)
+a = postac_kanoniczna[7]
+p = postac_kanoniczna[14]
+q = postac_kanoniczna[22]
+ 
+print("f(x) = a*(x - p)**2 + q")
+ 
+# ... i iloczynowej
+postac_iloczynowa = iloczyn(a , x1, x2)
+a = postac_iloczynowa[7]
+x1 = postac_iloczynowa[14] and postac_iloczynowa[15]
+x2 = postac_iloczynowa[22] and postac_iloczynowa[23]
+ 
+print("f(x) = a*(x - x1)*(x - x2)")
