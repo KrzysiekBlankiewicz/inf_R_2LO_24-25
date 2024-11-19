@@ -1,14 +1,28 @@
 
-tab1 = [[0, 0, 1, 1, 0],
-    [0, 0, 1, 1, 1],
-    [0, 1, 1, 1, 1],
-    [0, 1, 1, 1, 0],
-    [0, 0, 1, 1, 0]]
+def drawBoardSimple():
+    print(" ___")
+    print("|   |")
+    print("|   |")
+    print("|___|")
 
 
-tab2 = [[2, 4],
-        [2, 5],
-        [1, 5],
-        [1, 4],
-        [2, 4]]
+def drawBoardComplex(size):
+    first_row = " "
+    for i in range(0, size):
+        first_row = first_row + "_"
+    print(first_row)
+    
+    for i in range(0, size-2):
+        row = ""
+        for j in range(0, size):
+            pass
+        print(row)
+    
+    last_row = "|"
+    for i in range(0, size):
+        last_row = last_row + "_"
+    last_row = last_row + "|"
+    print(last_row)
 
+
+drawBoardComplex(11)
