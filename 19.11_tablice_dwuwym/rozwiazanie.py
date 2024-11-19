@@ -1,47 +1,29 @@
 
-
-def drawBoard(board):
-    for row in board:
-        string = ""
-        for elem in row:
-            if elem == 0:
-                string = string + "_"
-            if elem == 1:
-                string = string + "x"
-        print(string)
+def drawBoardSimple():
+    print(" ___")
+    print("|   |")
+    print("|   |")
+    print("|___|")
 
 
-def drawBoard2(board, size):
-    for row in board:
-        string = ""
-        for i in range(0, row[0]):
-            string = string + "_"
-        for j in range(row[0], row[1]):
-            string = string + "x"
-        for k in range(row[1], size):
-            string = string + "_"
-        print(string)
+def drawBoardComplex(size):
+    first_row = " "
+    for i in range(0, size):
+        first_row = first_row + "_"
+    print(first_row)
     
-tab1 = [[0, 0, 1, 1, 0, 0, 0, 0],
-    [0, 0, 1, 1, 1, 0, 0, 0],
-    [0, 1, 1, 1, 1, 0, 0, 0],
-    [0, 1, 1, 1, 0, 0, 0, 0],
-    [0, 0, 1, 1, 0, 0, 0, 0],
-    [0, 0, 0, 0, 0, 0, 0, 0],
-    [0, 0, 0, 0, 0, 0, 0, 0],
-    [0, 0, 0, 0, 0, 0, 0, 0]]
+    for i in range(0, size-2):
+        row = "|"
+        for j in range(0, size):
+            row = row + " "
+        row = row + "|"
+        print(row)
+    
+    last_row = "|"
+    for i in range(0, size):
+        last_row = last_row + "_"
+    last_row = last_row + "|"
+    print(last_row)
 
-drawBoard(tab1)
 
-print("")
-
-tab2 = [[2, 4],
-        [2, 5],
-        [1, 5],
-        [2, 4],
-        [0, 0],
-        [0, 0],
-        [0, 0],
-        [0, 0]]
-
-drawBoard2(tab2, 8)
+drawBoardComplex(11)
