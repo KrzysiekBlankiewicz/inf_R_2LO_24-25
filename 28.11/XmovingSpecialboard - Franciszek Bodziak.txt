@@ -1,0 +1,82 @@
+def isMarkerAtLegitPosition(table, xPos, yPos):
+    row = table[yPos]
+    currentx = 0
+    inside =  False
+    for i in row:
+        if xPos >= currentx and xPos < currentx + i and inside == True:
+            return "legit"
+        if inside == False:
+            inside = True
+        else:
+            inside = False
+def dataValidation(table, xPos, yPos):
+    first_line = table[0]
+    line_len = sum(first_line)
+    currenty = 0
+    for line in table:
+        if sum(line) != line_len:
+            return "wrong"
+        currenty += 1
+
+def move(command, position):
+    posm = [position[0],position[1]]
+    if command == "s":
+        posm[1] = posm[1] + 1
+    if command == "w":
+        posm[1] = posm[1] - 1
+    if command == "a":
+        posm[0] = posm[0] - 1
+    if command == "d":
+        posm[0] = posm[0] + 1
+        
+    return posm
+
+def drawBoard(multi_table, position):
+   currenty = 0
+   for x in multi_table:
+        draw_line(x, currenty, position[0], position[1])
+        currenty += 1
+        
+   print(dataValidation(multi_table, position[0], position[1]))
+
+def draw_line(table, line_nr, xPos, yPos):
+    cell_nr = 0
+    line_string = " "
+    inside = False
+    for i in table:
+        if inside == True:
+            line_string += "|"
+            for j in range(0,i):
+                if cell_nr == xPos and line_nr == yPos:
+                    line_string += "x|"
+                    cell_nr += 1
+                else:
+                    line_string += "_|"
+                    cell_nr += 1
+            inside = False
+            continue
+        if inside == False:
+            for j in range(0, 1):
+                line_string += " "
+                cell_nr += 1
+            for j in range(0,i-1):
+                line_string += "  "
+                cell_nr += 1
+            inside = True
+    print(line_string)
+
+tab = [[1,5,4,2], [4,3,1,4], [2,8,1,1], [1,1,1,1,8], [5,1,4,2]]
+poz = [5,1]
+
+
+drawBoard(tab, poz)
+
+for i in range(0, 100):
+    command = input("w/s/a/d:")
+    newPosition = move(command, poz)
+    if isMarkerAtLegitPosition(tab, newPosition[0], newPosition[1]) == "legit":
+        poz = newPosition
+  
+
+    drawBoard(tab, poz)
+
