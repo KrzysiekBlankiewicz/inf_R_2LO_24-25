@@ -1,0 +1,89 @@
+import math
+
+def wartosc_wielom(params, x):
+    a, b, c = params
+    wartosc = a * x**2 + b * x + c
+    return wartosc
+
+def delta(params):
+    a, b, c = params
+    d = b**2 - 4 * a * c
+    return d
+    
+def msc_zerowe(params):
+    a, b, c = params
+    d = delta(params)
+    if d >= 0:
+        x1 = (-b-math.sqrt(d))/(2*a)
+        x2 = (-b+math.sqrt(d))/(2*a)
+    elif d == 0:
+        x1 = -b/(2*a)
+        x2 = None
+    else:
+        x1 = x2 = None
+        
+    
+    return (x1, x1)
+
+def kanon(params):
+    a, b, c = params
+    d = delta(params)
+    p = -b/(2*a)
+    q = -d/(4*a)
+    return (a, p, q)
+
+def ilocz(params):
+    a, b, c = params
+    x1, x2 = msc_zerowe(params)
+    return (a, x1, x2)
+    
+def num_str(num):
+    if num > 0:
+        return "+ " + str(num)
+    else:
+        return "- " + str(-num)
+
+# dane od użytkownika
+print("Podaj wzór funkcji kwadratowej w formacie \"f(x) = ax^2 + bx + c\"")
+funkcja = "f(x) = 4x^2 - 3x - 7" #input()
+
+#print("Podaj argument do wyznaczenia wartości funkcji:")
+#x = input()
+
+# parametr przy x^2
+f = funkcja.split("=")[1].replace(" ", "")
+
+a = float(f.split("x^2")[0])
+#print("a = "+str(a))
+# parametr przy x
+
+tmp = f.split("x^2")[1].split("x")
+
+b = float(tmp[0])
+#print("b = "+str(b))
+
+# wyraz wolny
+c = float(tmp[1])
+#print("c = "+ str(c))
+
+# wypisz użytkownikowi wzór funkcji kwadratowej w postaci kanoniczna
+params = (a, b, c)
+postac_kanoniczna = kanon(params)
+
+p = postac_kanoniczna[1]
+q = postac_kanoniczna[2]
+
+print("Funkcja kanoniczna: f(x)= " + str(a) + " * (x " + num_str(-p) + ")^2 " + num_str(q))
+    
+
+
+# ... i iloczynowa
+postac_iloczynowa = ilocz(params)
+
+x1 = postac_iloczynowa[1]
+x2 = postac_iloczynowa[2]
+if x1 is not None and x2 is not None:
+    print("Funkcja iloczynowa: f(x) = " + str(a) + " * (x " + num_str(x1) + ") * (x " + num_str(x2) + ")")
+else:
+    print("Nie ma miejsc zerowych na postać iloczynową")
+
