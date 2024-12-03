@@ -1,3 +1,4 @@
+
 import math
 
 def wartosc_wielom(params, x):
@@ -45,10 +46,10 @@ def num_str(num):
 
 # dane od użytkownika
 print("Podaj wzór funkcji kwadratowej w formacie \"f(x) = ax^2 + bx + c\"")
-funkcja = "f(x) = 4x^2 - 3x - 7" #input()
+funkcja = input()
 
-#print("Podaj argument do wyznaczenia wartości funkcji:")
-#x = input()
+print("Podaj argument do wyznaczenia wartości funkcji:")
+x = input()
 
 # parametr przy x^2
 f = funkcja.split("=")[1].replace(" ", "")
@@ -86,4 +87,8 @@ if x1 is not None and x2 is not None:
     print("Funkcja iloczynowa: f(x) = " + str(a) + " * (x " + num_str(x1) + ") * (x " + num_str(x2) + ")")
 else:
     print("Nie ma miejsc zerowych na postać iloczynową")
+
+wartosc = wartosc_wielom(params, x)
+
+print("Wartość wielomianu dla " + str(x) + " wynosi:" + str(wartosc))
 
