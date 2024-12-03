@@ -1,0 +1,50 @@
+\documentclass[12pt]{article}
+\usepackage{geometry}
+\geometry{a4paper, margin=1in}
+
+\title{gra grand theft horse}
+\author{Wawrzyniec Krzesniak}
+\date{03.12.2024}
+
+
+\begin{document}
+
+\maketitle
+
+\includegraphics 
+
+\section{Wprowadzenie}
+\emph{Grand Theft Horse} to gra akcji osadzona w otwartym świecie dzikiego zachodu. Gracz wciela się w rolę wyjętego spod prawa przestepc, którego celem jest zdobywanie sławy i bogactwa poprzez kradzież koni, rabunki oraz ucieczki przed stróżami prawa.
+
+\section{Główne Cechy Gry}
+\begin{itemize}
+    \item \textbf{Otwarte Środowisko:} Gracz eksploruje rozległe tereny Dzikiego Zachodu, od pustynnych kanionów po górskie wioski.
+    \item \textbf{System Kradzieży Koni:} Mechanika gry pozwala na przejmowanie różnych ras koni, każdy o unikalnych cechach i możliwościach.
+    \item \textbf{Interaktywne Miasta:} W grze znajdują się dynamiczne miasta i wioski z mieszkańcami, których reakcje zmieniają się w zależności od działań gracza.
+    \item \textbf{Rozbudowany System Pojedynków:} Możliwość stawania do pojedynków rewolwerowych oraz walki wręcz.
+\end{itemize}
+
+\section{Fabuła}
+Gracz wciela się w dawnego żołnierza, który po wojnie stracił wszystko. W poszukiwaniu zemsty i szansy na nowe życie staje się legendarnym złodziejem koni, zdobywając sławę i bogactwo, ale także wrogów wśród łowców nagród i szeryfów.
+
+\section{Mechanika Rozgrywki}
+\subsection{Kradzież i Ucieczka}
+Gracz może kraść konie z farm, pociągów, a nawet z rąk innych bandytów. Każda kradzież wymaga sprytu i szybkości, a po udanej akcji często trzeba uciekać przed pościgiem.
+
+\subsection{System Honorowy}
+Działania gracza wpływają na jego reputację:
+\begin{itemize}
+    \item \textbf{Bohater:} Odbieranie koni złoczyńcom i pomoc mieszkańcom.
+    \item \textbf{Bandyta:} Bezlitosne kradzieże, rabunki i ataki na niewinnych.
+\end{itemize}
+
+\subsection{Rozwój Postaci i Konia}
+Gracz rozwija swoje umiejętności strzeleckie, siłę oraz zdolności do walki wręcz. Konie również mogą być ulepszane pod kątem szybkości, wytrzymałości i manewrowości.
+
+\section{Wizja Artystyczna}
+Gra oferuje realistyczną grafikę inspirowaną pejzażami Dzikiego Zachodu. Szczególną uwagę zwrócono na detale, takie jak dynamiczna zmiana pogody, zachody słońca nad pustynią oraz realistyczne animacje koni.
+
+\section{Podsumowanie}
+\emph{Grand Theft Horse} to ekscytująca gra akcji, która łączy w sobie dynamiczną rozgrywkę, rozbudowaną fabułę oraz unikalną mechanikę kradzieży koni, oferując graczom wciągające doświadczenie na Dzikim Zachodzie.
+
+\end{document}
