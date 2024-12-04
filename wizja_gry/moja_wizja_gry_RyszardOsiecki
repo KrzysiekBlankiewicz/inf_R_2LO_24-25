@@ -1,0 +1,27 @@
+\documentclass{article}
+\usepackage{graphicx} 
+\usepackage{polski}
+\usepackage{amsmath}
+\title{Moje wizja gry.}
+\author{Ryszard Osiecki }
+\date{4.12.2024}
+
+\begin{document}
+
+\maketitle
+
+\section{\underline{Wprowadzenie i zakres fabuły gry}}
+\sffamily
+\texttt{ \textbf{(Nazwa gry)} jest RPG-iem. W tej grze grasz jako bohater typu Isekai w której na samym początku rozgrywki zostajesz trafiony przez ciężarówkę. Po obudzeniu się zdajesz sobie sprawę z tego że trafiłeś do jakiegoś zapyziałego Dungeonu. Nie bój się! Lata grindowania w gry RPG i Dungeon crawlery przygotowały cię na taką sytuację. Teraz wszystko leży w twoich rękach aby uciec do swojego świata i ocalić swoje życie.} 
+\section{\underline{Mechaniki i rozgrywka}}
+\texttt{
+\begin{itemize}
+    \item \textbf{Walka oparta na systemie \emph{Turn Based Combat.}}
+    \item \textbf{Swobodne zwiedzanie \emph{Dungeonów.}}
+    \item \textbf{Możliwość posiadania ekwipunku}
+    \item \textbf{Możliwości dialogowe z \emph{Non Playable Character}, które mogą wpłynąć na rozgrywkę}
+\end{itemize} 
+}
+\section{\underline{Podsumowanie}}
+\texttt{(Nazwa gry) jest grą która, no będe szczery, posiada fabułę zrobioną trochę dla Shitpostu.}
+\end{document}
