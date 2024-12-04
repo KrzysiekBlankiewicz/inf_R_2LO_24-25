@@ -1,0 +1,54 @@
+\documentclass{article}
+\usepackage{graphicx} % Required for inserting images
+\usepackage{polski}
+
+\title{BoardFighterUltimate}
+\author{Franchesko }
+\date{03.12.2024}
+
+\begin{document}
+
+\maketitle
+\section{Główne założenia}
+Gra polega na losowo generowanych poziomach, zawierających różne pola, takie jak las, kopalnia i wyjście, prowadzące do kolejnego poziomu. Na planszach znajdują się także wrogowie, z którymi gracz może walczyć. Z każdym, nie pustym polem można wejść w interakcję.
+
+\section{Plansza}
+Plansza gry jest generowana losowo, zachowując warunek, że wszystkie pola muszą być połączone. Maksymalny rozmiar planszy to 10 x 10, jednak może być ona znacznie mniejsza.
+
+\section {Pola}
+Większość pól pozostaje pusta, jednak niektóre z nich są oznaczone są specjalnymi literami, konkretnie e - exit, m - mine, f - forest, u - upgrade.
+\subsection{Las}
+Wchodząc w interakcję z lasem, gracz może napotkać drewno, skarb lub wroga.
+\subsection{Kopalnia}
+Wchodząc w interakcję z kopalnią, gracz może napotkać kamień lub któryś z innych surowców (żelazo, złoto, diament, jerzonium)
+\subsection{Wyjście}
+Wchodząc w interakcję z wyjściem, gracz zostaje przeniesiony do następnego poziomu.
+\subsection{Ulepszenie}
+Wchodząc w interakcję z ulepszeniem, gracz otrzymuje jedno z losowych ulepszeń, podnoszących daną statystykę.
+
+\section{Postać}
+Postać to "o" (lepsze niż x).
+
+\subsection{Statystyki}
+Postać posiada kolejno życie, tarczę, siłę i los.
+
+\subsection{Ekwipunek}
+W ekwipunku znajdują się wszystkie przedmioty podniesione przez gracza.
+
+\section{Wrogowie}
+Wrogowie pojawiają się losowo na planszy, ze statystykami zależnymi od poziomu (np. na pierwszym poziomie mogę mieć 1-3 życia, na ósmym 20-30). Po pokonaniu upuszczają oni ustalone przedmioty.
+
+\section{Walka}
+Wejście w interakcję z wrogiem przenosi gracza, na ekran walki, przedstawiający statystyki gracza i wroga. Kiedy życie, któregoś z nich spadnie do zera walka dobiega do końca. W każdym ruchu gracz może użyć ataku, obrony lub ucieczki (także kończącej walkę). Atak odbiera przeciwnikowi tyle życia ile wynosi siła atakującego, wyjątkiem jest atak krytyczny zależny od losu (liczba losu to procent krytyka), zadaje on 2 razy więcej obrażeń. Życie nie zostaje odebrane jeżeli przeciwnik posiada tarczę, która sama przyjmuje na siebie obrażenia. Używając akcji obrona gracz może odnowić ilość tarczy, maksymalnie do początkowej ilości.
+
+\section{Uzbrojenie}
+Uzbrojenie są to przedmioty zwiększające w przypadku broni siłę lub przy zbroi tarczę. Są one niezależne od reszty statystyk.
+
+\subsection{Wytwarzanie}
+Uzbrojenie może być wytwarzane za pomocą przedmiotów zdobywanych w lesie, w kopalni i innych łupów. Ma ono różne poziomy w zależności od użytego surowca.
+
+\section{Zakończenie}
+Grę kończy poziom 10, na którym znajduję się tylko ostateczny boss, posiadający maksymalne statystyki.
+
+
+\end{document}
