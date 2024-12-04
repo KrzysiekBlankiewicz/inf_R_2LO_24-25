@@ -1,0 +1,21 @@
+\documentclass{article}
+\usepackage[polski]
+
+\title{Wizja gry}
+\author{Hubert Krysicki}
+
+\begin{document}
+
+\maketitle
+
+Chciałbym, żeby gra przypominała dungeon crawlera, w którym eksplorujemy (jeśli sie uda - losowo generowane dungeony) i zbieramy monety do ulepszeń. 
+
+\section{Główne elementy:}
+\begin{itemize}
+    \item Punkty życia odbierane przez przeciwników lub przez wejścia w pułapki
+    \item System ekwipunku i sklepu, z którego można kupić ulepszenia i broń np. zwiększone życie lub zwiększające zadawane obrażenia
+    \item Przeciwników, z których wypadają monety do sklepu
+    \item System doświadczenia wypadającego z mobów zwiększającego maksymalne życie i odborność na obrażenia
+\end{itemize}
+
+\end{document}
