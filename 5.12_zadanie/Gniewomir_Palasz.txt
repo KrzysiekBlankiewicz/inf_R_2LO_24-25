@@ -1,0 +1,48 @@
+file = open("dane.txt")
+
+r = file.read()
+
+print("Plik jako jeden napis:")
+print(r)
+
+a = r.split()
+print("Plik podzielony na elementy:")
+print(a)
+
+b = []
+for i in a:
+    b.append(int(i))
+
+print("Liczby z pliku:")
+print(b)
+
+c = []
+for j in range(0, len(a), 2):
+    para = [ b[j], b[j+1] ]
+    c.append(para)
+
+print("Liczby w parach:")
+print(c)
+
+#SUMA LICZB
+
+suma = 0
+for j in range(0, len(b), 1):
+    suma += b[j]
+
+print("Suma liczb:")
+print(suma)
+
+#zad 4.1
+
+def czy_pierwsza(n):
+    if n <= 1:  
+        return False
+    for i in range(2, int(n ** 0.5) + 1):
+        if n % i == 0:
+            return False  
+    return True
+    
+
+liczba = [1, 1000]
+
