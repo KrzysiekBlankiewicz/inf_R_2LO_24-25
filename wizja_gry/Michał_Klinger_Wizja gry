@@ -1,0 +1,10 @@
+\documentclass{article}
+\usepackage{amsmath}
+
+\begin{document}
+
+
+\subsection*{Opis gry}
+Gracz wciela się w postać bohatera, który wkracza do lochu, pełnego niebezpieczeństw, przeciwników i  skarbów. Jego celem jest zdobycie jak największej liczby monet, które są w różnych częściach lochu. W trakcie wędrówki musi unikać pułapek, pokonywać wrogów, aby dotrzeć do skarbów — ukrytych monet pilnowanych przez bosy.
+
+\end{document}
