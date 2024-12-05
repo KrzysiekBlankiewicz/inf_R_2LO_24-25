@@ -1,0 +1,20 @@
+file = open("dane.txt")
+r = file.read()
+
+a = r.split()
+
+b = [int(i) for i in a]  
+
+c = []
+
+for j in range(0, len(b), 2):
+    para = [b[j], b[j+1]]  
+    c.append(para) 
+
+
+suma = [sum(para) for para in c]
+
+œrednia_par = sum(suma) / len(suma)
+
+print("Œrednia par:")
+print(œrednia_par)
