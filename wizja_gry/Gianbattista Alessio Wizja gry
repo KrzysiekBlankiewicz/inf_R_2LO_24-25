@@ -1,0 +1,26 @@
+
+
+\documentclass{article}
+
+\usepackage{amsmath}
+
+\usepackage{Polski}
+
+
+
+\title{Wizja gry}
+
+\author{Gianbattista Alessio}
+
+\date{05.12.2024}
+
+\begin{document}
+
+\section*{Jak ma wyglądać gra}
+
+Gracz powinien się poruszać po planszy, być powinny jakies etapy, np zaczynając wchodzi do pewnych drzwi po czym musi starać się zabić danych przeciwników, za zabicie wszystkich postać dostaje jakiś fajny gadżet z którym może się bronić lub mieć lepszy atak bacz mocniejszy, bron będzie można kupować po wyjściu z etapu, pieniądze dostaje się za zadania z ktorymi można się napotkać podczas gry 
+
+
+
+\end{document}
+
