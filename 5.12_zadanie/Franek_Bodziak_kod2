@@ -1,0 +1,34 @@
+file = open("dane.txt")
+
+r = file.read()
+
+a = r.split()
+b = []
+for i in a:
+    b.append(int(i))
+c = []
+for j in range(0, len(a), 2):
+    para = [b[j], b[j+1]]
+    c.append(para)
+print("O to s¹ pary liczb")
+print(c)
+
+sump = 0
+d = []
+for l in range(0, len(a), 2):
+    sump = (b[l] + b[l+1])
+    d.append(sump)
+
+print("O to s¹ sumy par")
+print(d)
+
+sumallp = 0
+for u in range(0, len(d)):
+    sumallp = sumallp + d[u]
+    
+print(sumallp)
+
+avg = sumallp / len(d)
+
+print("O to jest œrednia par")
+print (avg)
