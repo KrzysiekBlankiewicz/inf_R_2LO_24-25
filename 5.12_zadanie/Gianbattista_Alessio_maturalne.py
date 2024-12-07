@@ -8,7 +8,7 @@ b = [int(i) for i in a]
 
 c = []
 
-def pier(x):
+def check(x):
     if x < 2:
         return False
     for i in range(2, int(x/2) + 1):
@@ -20,7 +20,7 @@ def pier(x):
 odp = 0
 
 for j in range(0, len(b), 2):
-    if pier(b[j]) and pier(b[j+1]):
+    if check(b[j]) and check(b[j+1]):
         c.append((b[j], b[j+1]))
         odp = odp + 1
 
