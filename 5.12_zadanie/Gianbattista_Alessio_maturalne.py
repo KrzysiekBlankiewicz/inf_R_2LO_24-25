@@ -15,14 +15,10 @@ def check(x):
         if x % i == 0:
             return False
     return True
-
-
 odp = 0
-
 for j in range(0, len(b), 2):
     if check(b[j]) and check(b[j+1]):
         c.append((b[j], b[j+1]))
         odp = odp + 1
-
 print(c)
 print(odp)
