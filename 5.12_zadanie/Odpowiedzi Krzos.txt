@@ -1,0 +1,21 @@
+Jan Krzos 
+<<<ZADANIE 4>>>
+
+
+<4.1>
+-18
+
+
+<4.2>
+-5
+
+
+<4.3>
+najbardziej oddalone od siebie punkty to:
+odległość między nimi to: 13348
+
+
+<4.4>
+a)249
+b)2
+c)749
