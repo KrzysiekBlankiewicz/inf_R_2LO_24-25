@@ -57,17 +57,6 @@ def z42():
 	print(suma)
 
 
-def dlugosc(z, p): 
-	if z == 2:
-		return p[0]
-	if z == 3:
-		return p[1]
-	if z == 4:
-		return p[2]
-	if z == 5:
-		return p[3]
-
-
 def z43():
 	file = open("punkty.txt")
 	r = file.read()
