@@ -1,0 +1,28 @@
+import random
+
+losowaLiczba_a1 = random.randint(-10^18, 10^18)
+losowaLiczba_a2 = random.randint(-10^18, 10^18)
+losowaLiczba_b1 = random.randint(-10^18, 10^18)
+losowaLiczba_b2 = random.randint(-10^18, 10^18)
+
+while losowaLiczba_a2 <= losowaLiczba_a1:
+    losowaLiczba_a2 = random.randint(-10^18, 10^18)
+
+while losowaLiczba_b2 <= losowaLiczba_b1:
+    losowaLiczba_b2 = random.randint(-10^18, 10^18)
+
+a1 = losowaLiczba_a1
+a2 = losowaLiczba_a2
+b1 = losowaLiczba_b1
+b2 = losowaLiczba_b2
+
+print("a1 = " + str(a1))
+print("a2 = " + str(a2))
+print("b1 = " + str(b1))
+print("b2 = " + str(b2))
+
+if (a1 > b2 and a2 > b1) or (a1 < b2 and a2 < b1):
+    print("Tak")
+else:
+    print("Nie")
+
