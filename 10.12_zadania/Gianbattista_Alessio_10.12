@@ -1,8 +1,0 @@
-iport random
-import math
-def platforma(a1, a2, b1, b2):
-    start = max(a1, b1)
-    end = min(a2, b2)
-    if start > end:
-        return "NIE"
-    return str(end - start)
