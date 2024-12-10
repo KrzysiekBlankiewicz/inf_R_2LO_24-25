@@ -1,0 +1,12 @@
+a1, a2, b1, b2 = input().split()
+a1 = int(a1)
+a2 = int(a2)
+b1 = int(b1)
+b2 = int(b2)
+
+if a2 < b1 or a1 > b2:
+    print("NIE")
+else:
+    początek = max(a1, b1)
+    koniec = min(a2, b2)
+    print(koniec - początek)
