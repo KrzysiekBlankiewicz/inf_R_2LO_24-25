@@ -1,5 +1,4 @@
 import random
-nigasdjghds= random.randint(-10^18, 10^18)
 a1 = int(input())
 a2 = int(input())
 b1 = int(input())
