@@ -1,21 +1,20 @@
-
-def nuda(a,b):
+def nuda(k,n):
     line = ""
     wydruk = 0
-    while wydruk < b:
-        ile = min(a, b - wydruk)
+    while wydruk < n:
+        ile = min(k, n - wydruk)
         line = "$ " * ile
         wydruk += ile
-        a+=2
+        k+=2
         print(line)
     return "Koniec"
 
-print("Wprowadź a:")
-a = int(input())
-print("Wprowadź b:")
-b = int(input())
-if a <= 1 or a >= b or a >= 10^6:
-    print("Zła liczba a")
-if b <= 1 or a <= a or b >= 10^6:
-    print("Zła liczba b")
-print(nuda(a , b))
+print("Wprowadź K:")
+k = int(input())
+print("Wprowadź N:")
+n = int(input())
+if k <= 1 or k >= n or k >= 10^6:
+    print("Zła liczba K")
+if n <= 1 or n <= k or n >= 10^6:
+    print("Zła liczba N")
+print(nuda(k , n))
