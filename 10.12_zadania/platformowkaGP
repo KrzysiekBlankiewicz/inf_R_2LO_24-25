@@ -1,28 +1,75 @@
-import random
 
-losowaLiczba_a1 = random.randint(-10^18, 10^18)
-losowaLiczba_a2 = random.randint(-10^18, 10^18)
-losowaLiczba_b1 = random.randint(-10^18, 10^18)
-losowaLiczba_b2 = random.randint(-10^18, 10^18)
 
-while losowaLiczba_a2 <= losowaLiczba_a1:
-    losowaLiczba_a2 = random.randint(-10^18, 10^18)
+def Przeszkody(a1, a2, b1, b2):
 
-while losowaLiczba_b2 <= losowaLiczba_b1:
-    losowaLiczba_b2 = random.randint(-10^18, 10^18)
+    #zeby na pewno a2>a1
+    if(a2 < a1):
+        tmp = a1
+        a1 = a2
+        a2 = tmp
 
-a1 = losowaLiczba_a1
-a2 = losowaLiczba_a2
-b1 = losowaLiczba_b1
-b2 = losowaLiczba_b2
+    #zeby na pewno b2>b1
+    if(b2 < b1):
+        tmp = b1
+        b1 = b2
+        b2 = tmp
 
-print("a1 = " + str(a1))
-print("a2 = " + str(a2))
-print("b1 = " + str(b1))
-print("b2 = " + str(b2))
+    #a pierwsze zachacza b dalsze
+    if(b1 <= a2 and b2 >= a2 and a1 <= b1):
+        return str(a2 - b1)
 
-if (a1 > b2 and a2 > b1) or (a1 < b2 and a2 < b1):
-    print("Tak")
-else:
-    print("Nie")
+    #b pierwsze zachacza a dalsze
+    if(a1 <= b2 and a2 >= b2 and b1 <= a1 ):
+        return str(b2 - a1)
+
+    #a jest w b
+    if(a1 >= b1 and a2 <= b2):
+        return str(a2 - a1)
+
+    #b jest w a
+    if(b1 >= a1 and b2 <= a2):
+        return str(b2 - b1)
+
+    #styczne 
+    if(a2 == b1 or b2 == a1):
+        return "0"
+
+    
+    return "Nie"
+    
+
+
+
+############################
+
+print(Przeszkody(1, 2, 3, 4) == "Nie") #rozdzielne
+
+print(Przeszkody(3, 4, 1, 2) == "Nie") #rozdzielne
+
+print(Przeszkody(2, 1, 4, 3) == "Nie") #rozdzielne pomieszane
+
+print(Przeszkody(4, 3, 2, 1) == "Nie") #rozdzielne pomieszane
+
+print(Przeszkody(2, 5, 4, 7) == "1") #a zachacza b
+
+print(Przeszkody(4, 7, 2, 5) == "1") #b zachacza a
+
+print(Przeszkody(2, 5, 3, 4) == "1") #b cale w a 
+
+print(Przeszkody(3, 4, 2, 5) == "1") #a cale w b 
+
+print(Przeszkody(2, 5, 5, 8) == "0") # a styka sie z b
+
+print(Przeszkody(5, 8, 2, 5) == "0") # b  styka sie z a
+
+print(Przeszkody(-10^18, 5, 4, 10^18) == "1") #a zachacza b
+
+print(Przeszkody(3, 4, 3, 4) == "1") #a = b 
+
+print(Przeszkody(0, 0, 0, 0) == "0") #a = b 
+
+print(Przeszkody(-10**18, 10**18, -10**18, 10**18) == str(2*10**18)) #a = b 
+
+
+
 
