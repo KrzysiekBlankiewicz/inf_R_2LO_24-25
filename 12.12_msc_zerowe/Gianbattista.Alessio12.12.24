@@ -1,0 +1,24 @@
+def fun(a, b, c, x):
+    return a*x**2 + b*x + c
+
+def msc_0(a, b, c, p, k, E):
+    if fun(a, b, c, p) * fun(a, b, c, k) > 0:
+        print("Brak zmiany znaku na koñcach przedzia³u.")
+        return None 
+
+    srodek = (p + k) / 2
+    if abs(fun(a, b, c, srodek)) <= E:
+        return srodek  
+
+    while abs(fun(a, b, c, srodek)) > E:
+        if fun(a, b, c, srodek) > 0:
+            k = srodek
+        else:
+            p = srodek  
+        srodek = (p + k) / 2  
+
+    return srodek
+
+
+odp = msc_0(-9, 5, 10, 20, 17, 0.0001)
+print(odp)
