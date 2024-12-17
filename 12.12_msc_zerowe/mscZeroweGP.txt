@@ -1,0 +1,34 @@
+def fun(a, b, c, x):
+    return a*x**2+b*x+c
+ 
+def delta(a, b, c):
+    return b**2-4*a*c
+ 
+def msc_zerowe(a, b, c, p, k , e):
+    srodek = (p+k)/2
+    if abs(fun(a, b ,c, srodek)) <= e :
+            return srodek
+ 
+    if fun(a, b, c, srodek)*fun(a, b, c, p) < 0
+        return msc_zerowe
+    else:
+        return msc_zerowe(a, b, c, srodek, k, e)
+ 
+    
+    while abs(fun(a, b, c, srodek)) > e:
+        if (fun(a, b, c, srodek)) > 0:
+            k = srodek
+        else:
+            p = srodek
+        srodek = (p+k)/2
+ 
+    return srodek
+ 
+print(msc_zerowe(1, -2, 0, 0, 17, 0.01))
+ 
+def fibb(n):
+    if n == 0 or n == 1 :
+        return 1
+    return fibb(n-1)+fibb(n-2)
+ 
+print(fibb(15))
