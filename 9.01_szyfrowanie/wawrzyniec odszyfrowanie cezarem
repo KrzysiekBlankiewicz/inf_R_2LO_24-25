@@ -1,0 +1,27 @@
+a = input("napisz slowo do zaszyfrowania: ")
+n = int(input("wybierz cyfre o ile program ma cezarowac: "))
+
+
+
+
+limit = 122
+limitdolny = 96
+
+def cezar(znak, n):
+    n = -n
+    a = ord(znak)
+    a += n
+    if a > limit:
+        b = a - limit + limitdolny
+        c = chr(b)
+        print(c, end="")
+    else:
+        b = chr(a)
+        print(b, end="")
+
+def cezar_slowo(slowo, n):
+    for i in range(0, len(slowo)):
+        cezar(slowo[i], n)
+    
+cezar_slowo(a, n)
+
