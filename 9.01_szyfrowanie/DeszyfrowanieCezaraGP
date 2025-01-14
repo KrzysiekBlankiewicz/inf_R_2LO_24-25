@@ -1,0 +1,23 @@
+def DeszyfrowanieCezara(tekst, przesuniecie):
+    wynik = ""
+    for znak in tekst:
+        if znak.isalpha():
+            if znak.isupper():
+                poczatek = ord("A")
+                koniec = ord("Z")
+            else:
+                poczatek = ord("a")
+                koniec = ord("z")
+
+            kod = ord(znak)
+            nowy_kod = kod - przesuniecie  
+
+            if nowy_kod < poczatek:
+                nowy_kod = nowy_kod + koniec - poczatek + 1
+
+            nowy_znak = chr(nowy_kod)
+            wynik += nowy_znak
+        else:
+            wynik += znak
+
+    return wynik
