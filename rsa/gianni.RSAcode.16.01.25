@@ -1,0 +1,38 @@
+import math
+
+def keys(p, q):
+    priv_key = (d, n)
+    public_key = (e, n)
+    n = p* q
+    t = (p -1) * (q —1)
+    math.gcd(t, e) = 1 where 1 < e < t
+    (d * e % t = 1)
+    return priv_key, public_key
+
+
+
+
+def encode(m, publ_key):
+    e = punbl_key[0]
+    n = punbl_key[1]
+    code = (m**e)% n 
+    return code
+
+
+def decode(code, priv_key):
+    d = priv_key[0]
+    n = priv_key[1]
+    m = (code**d)% n
+    return m
+
+priv_key, publ_key = keys(11, 5)
+
+print(f"Klucz publiczny: {publ_key}")
+print(f"Klucz prywatny: {priv_key}")
+
+message = 7
+encoded = encode(message, publ_key)
+print(f"Szyfrogram: {encoded}")
+
+decoded = decode(encoded, priv_key)
+print(f"Po deszyfrowaniu: {decoded}")
