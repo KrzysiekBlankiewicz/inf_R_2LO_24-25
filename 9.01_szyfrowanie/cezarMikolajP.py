@@ -2,7 +2,7 @@ znak = input()
 n = int(input())
 odp = ""
 limit = 122
-poczštek = 96
+początek = 96
  
     
 def skidbi(znak, n):
