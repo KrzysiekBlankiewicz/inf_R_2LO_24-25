@@ -2,7 +2,7 @@ def cezar_slowo(slowo, n):
     limit = 122
     wynik = ""
     for znak in slowo:
-        if 'a' <= znak <= 'z': 
+        if 'b' <= znak <= 'z': 
             x = ord(znak)
             x += n
             if x > limit:
