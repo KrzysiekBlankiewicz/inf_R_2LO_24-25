@@ -11,8 +11,8 @@ def nwd (a, b):
 		if a % i == 0 and b % i == 0:
 			licznikNwd += 1
 			nwd = i
-	return nwd
-	return licznikEuk
+	return nwd, licznikEuk
+	
 a  = int(input())
 b  = int(input())
 
@@ -25,9 +25,7 @@ def euk(x, y):
 		x = y
 		y = z
 		licznikEud += 1
-			return x
-			return y
-			return licznikEuk
+			return x, y, licznikEuk
 				
 
 x  = int(input())
