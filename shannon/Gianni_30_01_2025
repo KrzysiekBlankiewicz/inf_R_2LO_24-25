@@ -1,0 +1,61 @@
+file = open("tekst.txt")
+
+string = file.read()
+
+licznik = 0 
+for znak in string:
+    licznik += 1 
+print(licznik)
+
+a = 0 
+
+for znak in string:
+    if znak == "a" or znak == "A":
+        a += 1
+    if znak == "b" or znak == "B":
+        b += 1
+    if znak == "c" or znak == "C":
+        c += 1
+    if znak == "d" or znak == "D":
+        d += 1
+    if znak == "e" or znak == "E":
+        e += 1
+    if znak == "f" or znak == "F":
+        f += 1
+    if znak == "g" or znak == "G":
+        g += 1
+    if znak == "h" or znak == "H":
+        h += 1
+    if znak == "i" or znak == "I":
+        i += 1
+    if znak == "k" or znak == "K":
+        k += 1
+    if znak == "l" or znak == "L":
+        l += 1
+    if znak == "m" or znak == "M":
+        m += 1
+    if znak == "n" or znak == "N":
+        n += 1
+    if znak == "o" or znak == "O":
+        o += 1
+    if znak == "p" or znak == "P":
+        p += 1
+    if znak == "q" or znak == "Q":
+        q += 1
+    if znak == "r" or znak == "R":
+        r += 1
+    if znak == "s" or znak == "S":
+        s += 1
+    if znak == "t" or znak == "T":
+        t += 1
+    if znak == "v" or znak == "V":
+        v += 1
+    if znak == "x" or znak == "X":
+        x += 1
+    if znak == "y" or znak == "Y":
+        y += 1
+    if znak == "z" or znak == "Z":
+        z += 1
+print(a, b, c, d, e, f, g, h, i, k, l, m, n, o, p, q, r, s, t, v, x, y, z)
+
+print(a/licznik, b/licznik, c/licznik, d/licznik, e/licznik, f/licznik, g/licznik, h/licznik, i/licznik, k/licznik, l/licznik, m/licznik, n/licznik, o/licznik, p/licznik, q/licznik, r/licznik, s/licznik, t/licznik, v/licznik, x/licznik, y/licznik, z/licznik)
