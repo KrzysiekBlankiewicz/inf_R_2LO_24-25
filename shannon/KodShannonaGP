@@ -1,0 +1,38 @@
+file = open("nazwa.txt")
+
+string = file.read()
+
+licznik = 0
+for znak in string:
+    licznik += 1
+    print(licznik)
+
+n = 0
+i = 0
+g = 0
+e = 0
+r = 0
+c = 0
+k = 0
+d = 0
+
+for znak in string:
+    if znak == "n" or znak == "N":
+        n += 1
+    elif znak == "i" or znak == "I":
+        i += 1
+    elif znak == "g" or znak == "G":
+        g += 1
+    elif znak == "e" or znak == "E":
+        e += 1
+    elif znak == "r" or znak == "R":
+        r += 1
+    elif znak == "c" or znak == "C":
+        c += 1
+    elif znak == "k" or znak == "K":
+        k += 1
+    elif znak == "d" or znak == "D":
+        d += 1
+
+    
+print(int(licznik/8))
