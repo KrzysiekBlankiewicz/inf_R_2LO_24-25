@@ -14,6 +14,7 @@ def isMarkerAtLegitPosition(table, xPos, yPos):
             inside = True
     return "wrong"
 
+
 def dataValidation(table, xPos, yPos):
     first_line = table[0]
     line_len = sum(first_line)
@@ -62,6 +63,7 @@ def draw_line(table, line_nr, xPos, yPos):
             inside = True
     print(line_string)
 
+
 def move(command, position):
     if command == "w":
         newY = position[1] - 1
@@ -74,10 +76,13 @@ def move(command, position):
 
     return (newX, newY)
 
+
 tab = [[1,5,4,2], [4,3,1,4], [2,8,1,1], [1,1,1,1,8], [5,1,4,2]]
 poz = [5,1]
 
+
 drawBoard(tab, poz)
+
 
 for i in range(0, 100):
     command = input("w/s/a/d:")
@@ -85,4 +90,5 @@ for i in range(0, 100):
     if isMarkerAtLegitPosition(tab, newPosition[0], newPosition[1]) == "legit":
         poz = newPosition
 
+    
     drawBoard(tab, poz)
