@@ -1,67 +1,28 @@
-
-
 def draw_line(tablica, px, py):
-
-    ly = 0
-
-    linia = ""
-
-    wewn = False
-
+    ly = 0 
     for i in tablica:
-
-        if wewn == True:
-
-            linia += "|"
-
-            for j in range(0,i):
-
-                if j== px and ly == py:
-
-                    linia += "x|"
-
-                else:
-
-                    linia += "_|"
-
-            wewn = False
-
-            continue
-
-        if wewn == False:
-
-            for j in range(0, 1):
-
-                linia += " "
-
-            for j in range(0,i-1):
-
-                linia += "  "
-
-            wewn = True
-
-        ly = ly+1
-
-    print(linia)
+        linia = ""
+        wewn = False
+        for j in range(len(i)):  
+            if wewn:
+                linia += "|"
+                for k in range(i[j]):
+                    if j == px and ly == py:
+                        linia += "x|"
+                    else:
+                        linia += "_|"
+                wewn = False
+            else:
+                linia += " " * (2 * i[j] - 1)
+                wewn = True
+        print(linia)
+        ly += 1  
 
 
 
-tab = [[5,1,4,2], [4,3,1,5], [2,8,1,4], [1,1,1,1,1,], [5,1,4,2]]
+tab = [[5, 1, 4, 2],[4, 3, 1, 5],[2, 8, 1, 4],[1, 1, 1, 1, 1],[5, 1, 4, 2]]
 
+pozx = int(input("Podaj pozycję x: "))
+pozy = int(input("Podaj pozycję y: "))
 
-
-poz = [1,1]
-
-pozx = input("podaj pozycję x")
-
-pozy = input("podaj pozycję y")
-
-poz[0] = pozx
-
-poz[1] = pozy
-
-
-
-for x in tab:
-
-    draw_line(x, pozx, pozy)
+draw_line(tab, pozx, pozy)
