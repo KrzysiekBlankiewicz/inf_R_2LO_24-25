@@ -1,0 +1,5 @@
+Zadanie 1
+Suma liczb: 552
+
+Zadanie 2
+Średnia sum: 46
