@@ -3,3 +3,11 @@ Suma liczb: 552
 
 Zadanie 2
 Średnia sum: 46
+
+Maturalne:
+4.1 Punkty, gdzie obie współrzędne są liczbami pierwszymi: [[1877, 3671], [5843, 4289], [2161, 9461], [3331, 7307], [739, 3299], [5099, 3371], [59, 4937], [2029, 8597], [4337, 1721], [9901, 593], [6689, 3931], [3067, 3061], [1361, 4129], [467, 9397], [5737, 8011], [5479, 8147], [7577, 1433], [941, 5261]]. Jest ich 18.
+4.2 Punkty, gdzie obie współrzędne są liczbami 'cyfropodobne': [[829, 2899], [5978, 9587], [9205, 2095], [1536, 1365], [4016, 4601]]. Jest ich 5.
+4.3 Punkty najbardziej oddalone: ([9901, 593], [35, 9583]). Odległość między tymi punktami (zaokrąglona do liczby całkowitej) 13348.
+4.4 Liczba punktów wewnątrz kwadratu (bez boków): 249.
+    Liczba punktów na bokach kwadratu: 2.
+    Liczba punktów na zewnątrz kwadratu (bez boków): 749.
