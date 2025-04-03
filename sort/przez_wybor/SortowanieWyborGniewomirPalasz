@@ -1,0 +1,29 @@
+import time
+import random
+import math
+
+
+def pozycja_min(tab):
+    min_value = tab[0]
+    min_pozycja = 0
+    for i in range(1, len(tab)):
+        if tab[i] < min_value:
+            min_value = tab[i]
+            min_pozycja = i 
+    return min_pozycja
+ 
+def sort_wybor(tab):
+    n = len(tab)
+    for i in range(n):
+        min_pos = pozycja_min(tab[i:])
+        min_pos = i + min_pos
+        tab[i], tab[min_pos] = tab[min_pos], tab[i]  
+    return tab
+ 
+x1 = time.time()  
+tab = [64, 25, 12, 22, 11]
+sorted_tab = sort_wybor(tab)
+x2 = time.time()  
+ 
+print(sorted_tab) 
+print(x2 - x1)
