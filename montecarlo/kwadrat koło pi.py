@@ -1,0 +1,27 @@
+import random
+import math
+
+def dist_fromCenter(point):
+
+    x = point[0]
+    y = point[1]
+    return math.sqrt((500-x)**2 + (500-y)**2)
+
+pointsAmount = 1000
+boardSize = 1000
+
+
+
+points =[]
+for p in range  (0, pointsAmount):
+    x = random.randint(0, boardSize)
+    y = random.randint(0, boardSize)
+    points.append([x, y])
+    
+inside_points = 0
+for p in points:
+        if dist_fromCenter(p) < 500:
+            inside_points += 1
+
+result = (inside_points/pointsAmount) * 4
+print("liczba pi = ", points)
