@@ -1,0 +1,106 @@
+import pygame
+import random
+import math
+
+RADIUS = 20
+STEP = 5
+ENEMY_STEP = 2 
+OBSTACLE_RADIUS = 30
+
+def isMovePossible(movingAgent, obstacles):
+    for obs in obstacles:
+        distance = math.hypot(movingAgent.x - obs.x, movingAgent.y - obs.y)
+        if distance < RADIUS + OBSTACLE_RADIUS:
+            return False
+    return True
+
+class Player:
+    def __init__(self, startX, startY, color):
+        self.x = startX
+        self.y = startY
+        self.color = color
+
+    def move(self, dx, dy, obstacles):
+        new_x = self.x + dx
+        new_y = self.y + dy
+        temp = type('Temp', (), {'x': new_x, 'y': new_y})()
+        if isMovePossible(temp, obstacles):
+            self.x = new_x
+            self.y = new_y
+
+    def draw(self, window):
+        pygame.draw.circle(window, self.color, (int(self.x), int(self.y)), RADIUS)
+
+class Obstacle:
+    def __init__(self, startX, startY, color):
+        self.x = startX
+        self.y = startY
+        self.color = color
+
+    def draw(self, window):
+        pygame.draw.circle(window, self.color, (int(self.x), int(self.y)), OBSTACLE_RADIUS)
+
+class Enemy:
+    def __init__(self, startX, startY, color):
+        self.x = startX
+        self.y = startY
+        self.color = color
+
+    def move(self, obstacles):
+        dx = random.randint(-ENEMY_STEP, ENEMY_STEP)
+        dy = random.randint(-ENEMY_STEP, ENEMY_STEP)
+        new_x = self.x + dx
+        new_y = self.y + dy
+        temp = type('Temp', (), {'x': new_x, 'y': new_y})()
+        if isMovePossible(temp, obstacles):
+            self.x = new_x
+            self.y = new_y
+
+    def draw(self, window):
+        pygame.draw.circle(window, self.color, (int(self.x), int(self.y)), RADIUS)
+
+
+size = 800
+running = True
+pygame.init()
+screen = pygame.display.set_mode((size, size))
+clock = pygame.time.Clock()
+
+
+player = Player(100, 100, (0, 0, 255)) 
+enemy = Enemy(300, 300, (255, 0, 0))       
+obstacles = [
+    Obstacle(400, 400, (0, 255, 0)),        
+    Obstacle(200, 200, (0, 255, 0))
+]
+
+while running:
+    clock.tick(60) 
+    for event in pygame.event.get():
+        if event.type == pygame.QUIT:
+            running = False
+
+  
+    keys = pygame.key.get_pressed()
+    if keys[pygame.K_w]:
+        player.move(0, -STEP, obstacles)
+    if keys[pygame.K_s]:
+        player.move(0, STEP, obstacles)
+    if keys[pygame.K_a]:
+        player.move(-STEP, 0, obstacles)
+    if keys[pygame.K_d]:
+        player.move(STEP, 0, obstacles)
+
+   
+    enemy.move(obstacles)
+
+  
+    screen.fill((255, 255, 255))  
+    player.draw(screen)
+    enemy.draw(screen)
+    for obs in obstacles:
+        obs.draw(screen)
+
+    pygame.display.flip()
+
+pygame.quit()
