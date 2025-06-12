@@ -14,8 +14,7 @@ while True:
     data = conn.recv(1024)
     if not data:
         break
-    print(data)
-    conn.sendall(data)
+    conn.sendall(b"received data")
 
 conn.close()
 s.close()
