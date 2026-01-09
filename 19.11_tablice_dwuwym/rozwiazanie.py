@@ -12,7 +12,7 @@ def drawBoardComplex(size):
         first_row = first_row + "_"
     print(first_row)
     
-    for i in range(0, size-2):
+    for i in range(0, size-1):
         row = "|"
         for j in range(0, size):
             row = row + " "
@@ -26,4 +26,4 @@ def drawBoardComplex(size):
     print(last_row)
 
 
-drawBoardComplex(11)
+drawBoardComplex(5)
